@@ -1,0 +1,161 @@
+command + space 
+terminal
+
+//delete download history
+sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuaranyineEventsV* 'delete from LSQuarantineEvent'
+
+⏩  say
+  say what you want to say
+
+⏩  security find-generic-password -wa Wifi
+  security find-generic-password -wa wifi //wifi is wifiname
+
+⏩  pbcopy
+  pbcopy //use with any command to copy the out put
+  pipe pbcopy 
+  security find-generic-password -wa mywifiname | pbcopy
+
+⏩  command + option + shift + v
+  cmd + option + shift + V //copy any format to plain text
+
+⏩  caffeinate
+  caffeinate //terminal up mac will stay awake control c to stop
+
+⏩  command + shift + 3
+  screen shots
+  commd+shift+4
+  commd+controol+shift+4
+
+⏩  defaults write com.apple.screencapture name
+  change screenshot names
+  defaults write com.apple.screencapture name "snap"
+
+⏩  defaults write com.apple.screencapture type
+  defaults write com.apple.screencapture type jpg
+
+⏩  default write com.apple.screencapture location ~/Desktop/screenshots
+
+⏩  passwd
+  to change password
+  security set-keychain-password
+  dashlane website to manage password, check password health
+
+⏩  cd
+⏩  ls
+⏩  pwd
+⏩  whoami
+⏩  mv
+⏩  cp
+
+⏩  ditto
+   
+
+⏩  df -h
+   space on hard drive
+
+⏩  nano
+
+⏩  man
+    for help 
+
+⏩  open
+   open from terminal
+
+⏩  ping
+
+⏩  ifconfig
+    ifconfig en0
+
+⏩  grep
+   filtering 
+   ifconfig en0 | grep inet
+
+⏩  awk
+   ifconfig en0 | grep inet | awk '{ print $2 }'
+
+⏩  traceroute
+  traceroute website.com
+
+⏩  dig
+  for DNS 
+  dig website.com
+
+⏩  ps
+  check processes
+   ps 
+   ps -ax
+
+⏩  top
+  real time processes
+  top -o rsize //filter by memory
+
+⏩  kill
+  ps -ax | grep thisascript
+  kill -9 PID
+
+⏩  which $SHELL
+   change SHELL
+   bash to select bash
+   zhs is default
+
+⏩  bash
+⏩  zsh
+⏩  uptime
+  macuptime 
+
+⏩  killall mDNSResponder….and more
+
+⏩  qlmanage
+  qlmanage with file name to preview
+
+⏩  diff
+  to compare two files
+
+⏩  curl
+ download
+
+⏩  leave
+  alarm to set on termnal to leave 
+  leave 1200
+
+⏩  history
+  all list of commands 
+
+⏩  disable gatekeeper
+   
+
+⏩  brew
+   brew install cmatrix
+   brew install asciiquarium
+   brew install toilet
+   brew install samtay/tui/tetris
+
+⏩  cmatrix
+matrix display
+
+⏩  asciiquarium
+
+
+⏩  toilet
+  
+
+⏩  tetris
+
+⏩  python3
+  start a web server
+   python3 -m http.server
+share files in same network 
+
+⏩  shutdown
+  shutdown -h now 
+  shutdown -r now
+
+⏩  sudo touch id
+  //no need to use sudo password again and again
+touch id on mac book as an sudo password
+
+sudo nano /etc/pam.d/sudo
+promt for password
+//add below line in file and save
+auth sufficient pam_tid.shots
+//control x y and save
